@@ -1,4 +1,7 @@
 # JohnApp - React app
+## TODO
+Todo Frame
+
 ## REST API
 
 This project use [Platzi Fake Store API](https://fakeapi.platzi.com/en/rest/users/) for : 

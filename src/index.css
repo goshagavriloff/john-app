@@ -1,6 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap');
 
 body{
-  font-family: 'Lato',sans-serif;
+  font-family: "Heebo", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-size: 20px;
 }
 .hide-scrollbar::-webkit-scrollbar{
   display: none;
@@ -8,3 +12,5 @@ body{
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+

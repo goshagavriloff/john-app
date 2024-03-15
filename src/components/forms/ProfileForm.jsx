@@ -20,7 +20,7 @@ const ProfileForm = () => {
     return (
         <div className="relative w-96 flex flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md">
             <div className="relative mx-4 mt-4 h-80 overflow-hidden rounded-xl bg-white bg-clip-border text-gray-700 shadow-lg">
-                <img src={user?.avatar} alt="profile-picture" className='w-full h-full'/>
+                <img src={user?.avatar} alt="profile avatar" className='w-full h-full'/>
             </div>
             <div className="p-6 text-center">
                 <h4 className="mb-2 block font-sans text-2xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">

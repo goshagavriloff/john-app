@@ -1,17 +1,21 @@
 import React from 'react'
-import { NavLink } from 'react-router-dom'
-import useRefreshToken from '../web/middleware/useRefreshToken';
 
+import useRefreshToken from '../web/middleware/useRefreshToken';
+import HeaderContainer from '../components/container/HeaderContainer';
+import PostContainer from '../components/container/PostContainer';
+import FeatureContainer from '../components/container/FeatureContainer';
+import FooterContainer from '../components/container/FooterContainer';
 
 const Home = () => {
   useRefreshToken();
 
   return (
-    <div>
-      Home
-        <NavLink to="/john-app/profile" >Профиль</NavLink>
-
-    </div>
+    <>
+      <HeaderContainer />
+      <PostContainer />
+      <FeatureContainer />
+      <FooterContainer />
+    </>
   )
 }
 
