@@ -1,5 +1,6 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
+import manPreview from '../../assets/man_preview.png';
 
 const HeaderContainer = () => {
     return (
@@ -8,7 +9,7 @@ const HeaderContainer = () => {
                 <div className="px-4 mx-auto max-w-[1152px]">
                     <nav>
                         <div className="flex justify-between items-center">
-                            <NavLink className="text-lg font-medium" to="/john-app/profile">
+                            <NavLink className="text-lg font-bold" to="/john-app/profile">
                                 JOHN
                             </NavLink>
                             <div className="lg:hidden">
@@ -33,7 +34,7 @@ const HeaderContainer = () => {
                     <div className="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25"></div>
                     <nav className="relative flex flex-col py-6 px-6 w-full h-full bg-white border-r overflow-y-auto">
                         <div className="flex items-center mb-8">
-                            <NavLink className="mr-auto text-2xl font-medium leading-none" to="/john-app/profile">
+                            <NavLink className="mr-auto text-2xl font-bold leading-none" to="/john-app/profile">
                                 JOHN
                             </NavLink>
                             <button className="navbar-close">
@@ -44,7 +45,7 @@ const HeaderContainer = () => {
                         </div>
                         <div>
                             <ul>
-                                <li className="mb-1"><NavLink className="block p-4 text-sm font-medium text-gray-900 hover:bg-gray-50 rounded" to="/john-app/works">Works</NavLink></li>
+                                
                                 <li className="mb-1"><NavLink className="block p-4 text-sm font-medium text-gray-900 hover:bg-gray-50 rounded" to="/john-app/blog">Blog</NavLink></li>
                                 <li className="mb-1"><NavLink className="block p-4 text-sm font-medium text-gray-900 hover:bg-gray-50 rounded" to="/john-app/contact">Contact</NavLink></li>
                             </ul>
@@ -55,7 +56,17 @@ const HeaderContainer = () => {
             </header>
             <section>
                 <div className="px-4 mx-auto max-w-[1152px]">
-                </div>
+                	<div className="flex items-start flex-col-reverse md:flex-row pt-[50px] pr-0 md:pt-[140px] md:pl-[140px]">
+	    			<div className="max-w-[500px] pt-[10px]">
+	    				<h1 className="font-bold text-4xl md:text-5xl text-center md:text-left text-balance leading-[3.75rem]">Hi, I am John, Creative Technologist</h1>
+	    				<p className="my-10 text-base">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+	    				<button className="bg-primary px-5 pt-2 pb-4 font-medium text-white">Download Resume</button>
+	    			</div>
+	    			<div className='w-full'>
+ 					<img className="mx-auto my-0 w-[180px] md:w-[243px] shadow-[-13px_19px_0_0_rgba(237,247,250,1)] rounded-full"  src={manPreview}/>                       
+	    			</div>
+	    		</div>
+	    	</div>
             </section>
         </>
 

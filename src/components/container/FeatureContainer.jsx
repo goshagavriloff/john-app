@@ -2,7 +2,7 @@ import React from 'react'
 
 const FeatureContainer = () => {
   return (
-    <div>FeatureContainer</div>
+    <div class="container">FeatureContainer</div>
   )
 }
 
