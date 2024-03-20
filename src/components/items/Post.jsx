@@ -1,8 +1,5 @@
 import React from 'react'
-//title string
-//date DateTime
-//topics string[]
-//description string
+
 const Post = ({title,date,topics,description}) => {
 
   const formatDate = (date)=>{

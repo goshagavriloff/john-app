@@ -6,7 +6,7 @@ import {FaFacebookSquare, FaInstagram,FaTwitter, FaLinkedin} from 'react-icons/f
 //linkedln
 const FooterContainer = () => {
   return (
-    <div class="px-4 mx-auto max-w-[1152px]">
+    <div class="px-4 mt-[120px] mx-auto max-w-[1152px]">
 	  <div class='flex flex-row justify-center items-center'>
 	  	<FaFacebookSquare className='mr-[35px]'/>
 	  	<FaInstagram className='mr-[35px]'/>
