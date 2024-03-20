@@ -56,7 +56,7 @@ const HeaderContainer = () => {
             </header>
             <section>
                 <div className="px-4 mx-auto max-w-[1152px]">
-                	<div className="flex items-start flex-col-reverse md:flex-row pt-[50px] pr-0 md:pt-[140px] md:pl-[140px]">
+                	<div className="flex items-start flex-col-reverse md:flex-row pt-[50px] pr-0 md:pt-[140px] md:pl-[148px]">
 	    			<div className="max-w-[500px] pt-[10px]">
 	    				<h1 className="font-bold text-4xl md:text-5xl text-center md:text-left text-balance leading-[3.75rem]">Hi, I am John, Creative Technologist</h1>
 	    				<p className="my-10 text-base">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
