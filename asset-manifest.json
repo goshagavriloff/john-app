@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/john-app/static/css/main.16441e62.css",
+    "main.js": "/john-app/static/js/main.5897e3bc.js",
+    "static/media/video_preview.mp4": "/john-app/static/media/video_preview.4e7489c2563ff0def1c6.mp4",
+    "static/media/man_preview.png": "/john-app/static/media/man_preview.827844632d6f012ee1c2.png",
+    "static/media/feature_2.png": "/john-app/static/media/feature_2.921ec2133ea61c9af009.png",
+    "static/media/feature_1.png": "/john-app/static/media/feature_1.ada3f35591bb6d62ad60.png",
+    "static/media/feature_3.png": "/john-app/static/media/feature_3.8c1a7de30c9f2a681b41.png",
+    "index.html": "/john-app/index.html",
+    "main.16441e62.css.map": "/john-app/static/css/main.16441e62.css.map",
+    "main.5897e3bc.js.map": "/john-app/static/js/main.5897e3bc.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.16441e62.css",
+    "static/js/main.5897e3bc.js"
+  ]
+}
