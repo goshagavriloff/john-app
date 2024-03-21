@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { userService } from '../../web/fakeapi/user/UserService';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 
 const LoginForm = () => {
@@ -61,11 +61,13 @@ const LoginForm = () => {
                                     <label htmlFor="remember" className="">Запомнить меня</label>
                                 </div>
                             </div>
-                            <a href="#" className="text-sm font-medium text-primary-600 hover:underline dark:text-primary-500">Забыли пароль?</a>
+                            <a href="https://fakeapi.platzi.com/en/rest/users/" className="text-sm font-medium text-primary-600 hover:underline dark:text-primary-500">Забыли пароль?</a>
                         </div>
                         <button type="submit" className="w-full text-black focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:focus:ring-primary-800">Войти</button>
                         <p className="text-sm font-light text-gray-500 dark:text-gray-400">
-                            Нет аккаунта? <a href="/john-app/register" className="font-medium text-primary-600 hover:underline dark:text-primary-500">Зарегистрироваться</a>
+                            Нет аккаунта? 
+                            <Link to="/john-app/register" className="font-medium text-primary-600 hover:underline dark:text-primary-500">Зарегистрироваться</Link>
+
                         </p>
                     </form>
                 </div>
