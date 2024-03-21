@@ -1,5 +1,4 @@
 import React from 'react'
-import { NavLink } from 'react-router-dom'
 import manPreview from '../../assets/man_preview.png';
 
 const Slide = () => {

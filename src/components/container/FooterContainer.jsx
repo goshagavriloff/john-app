@@ -1,9 +1,7 @@
 import React from 'react'
 import {FaFacebookSquare, FaInstagram,FaTwitter, FaLinkedin} from 'react-icons/fa';
-//facebook
-//instagramm
-//twitter
-//linkedln
+
+
 const FooterContainer = () => {
   return (
     <div class="px-4 mt-[120px] mx-auto max-w-[1152px]">
@@ -13,7 +11,7 @@ const FooterContainer = () => {
 		<FaTwitter className='mr-[35px]'/>
 	  	<FaLinkedin />
 	  </div>
-	  <p class='text-center text-sm mt-[26px]'>Copyright @2020 All rights reserved </p>
+	  <p className='text-center text-sm mt-[26px]'>Copyright @2020 All rights reserved </p>
   </div>
   )
 }
