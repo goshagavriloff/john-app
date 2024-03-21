@@ -1,6 +1,4 @@
 # JohnApp - React app
-## TODO
-Todo Frame
 
 ## REST API
 
