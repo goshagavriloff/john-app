@@ -61,7 +61,7 @@ const LoginForm = () => {
                                     <label htmlFor="remember" className="">Запомнить меня</label>
                                 </div>
                             </div>
-                            <a href="https://fakeapi.platzi.com/en/rest/users/" className="text-sm font-medium text-primary-600 hover:underline dark:text-primary-500">Забыли пароль?</a>
+                            <a href="https://fakeapi.platzi.com/en/rest/auth-jwt/" target="_blank" className="text-sm font-medium text-primary-600 hover:underline dark:text-primary-500">Забыли пароль?</a>
                         </div>
                         <button type="submit" className="w-full text-black focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:focus:ring-primary-800">Войти</button>
                         <p className="text-sm font-light text-gray-500 dark:text-gray-400">
