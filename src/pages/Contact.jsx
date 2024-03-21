@@ -7,7 +7,7 @@ const Contact = () => {
     <>
     
     <HeaderContainer />
-    <div>Contact</div>
+    <div className='mx-auto max-w-[863px] md:pl-[1rem]'>Contact</div>
     <FooterContainer />
     
     </>

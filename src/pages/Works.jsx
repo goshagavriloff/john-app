@@ -6,7 +6,7 @@ const Works = () => {
   return (
     <>
     <HeaderContainer />
-    <div>Works</div>
+    <div className='mx-auto max-w-[863px] md:pl-[1rem]'>Works</div>
     <FooterContainer />
     
     </>

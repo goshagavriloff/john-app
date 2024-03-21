@@ -6,7 +6,7 @@ const Blog = () => {
   return (
     <>
     <HeaderContainer />
-    <div>Blog</div>
+    <div className='mx-auto max-w-[863px] md:pl-[1rem]'>Blog</div>
     <FooterContainer />
     </>
 
