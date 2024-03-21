@@ -34,7 +34,9 @@ const RegisterForm = () => {
         const isValidPassword=/^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/.test(password);
 
         const isValidConfimPassword=isValidPassword&(password===password_repeat);
-        const promiseIsValidEmail=userService.checkMail(email);;
+        const isValidRegexpEMail=/\S+@\S+\.\S+/.test(email);
+
+	const promiseIsValidEmail=userService.checkMail(email);
 
         return promiseIsValidEmail.then((IsValidEmail)=>{
             return new Promise((resolve,reject)=>{
@@ -57,7 +59,12 @@ const RegisterForm = () => {
                     //textError+="Validattion error: email is already registered  \n";
                   
                 }
+		if (!isValidRegexpEMail){
+		    inputError.email="Email неверен";
+                    textError+="Validattion error: email is not valid  \n";
 
+		}
+		
                 if (!isValidConfimPassword){
                     inputError.password_repeat="Пароли должны совпадать";
                     textError+="Validation error: password did not equals \n";
@@ -84,7 +91,6 @@ const RegisterForm = () => {
       .then(()=>userService.register(login,email,password))
       .then(()=>navigate('/john-app/login'))
       .catch((err)=>{
-        console.log(err);
       });
 
     }
@@ -129,7 +135,7 @@ const RegisterForm = () => {
                             id="email" 
                             className="bg-gray-50 border border-gray-300  sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5  dark:border-gray-600 dark:placeholder-gray-400  dark:focus:ring-blue-500 dark:focus:border-blue-500" 
                             placeholder="name@company.com" 
-                            required=""
+                            required={true}
                             value={formInput.email}
                             onChange={handleUserInput} />
                             <p className="text-sm text-red-500">{formError.email}</p>
